@@ -24,4 +24,4 @@ if (etaPasseggero <= 17) {
     prezzoBigliettoFinale = prezzoBigliettoIntero - scontoOver;
 } else prezzoBigliettoFinale = prezzoBigliettoIntero;
 
-console.log(prezzoBigliettoFinale);}
+console.log(prezzoBigliettoFinale.toFixed(2));}
