@@ -6,6 +6,10 @@ const kmViaggioStr = prompt(`Quanti km devi percorrere?`);
 const kmViaggio = parseInt(kmViaggioStr);
 console.log(kmViaggio);
 
+if (isNaN(etaPasseggero) || isNaN(kmViaggio) === true) {
+    console.log("Valore inserito errato! Ricarica la pagina!");
+} else {
+
 const prezzoBigliettoIntero = kmViaggio * 0.21;
 console.log(prezzoBigliettoIntero);
 
@@ -15,12 +19,9 @@ const scontoOver = prezzoBigliettoIntero * 40 / 100
 
 let prezzoBigliettoFinale
 if (etaPasseggero <= 17) {
-    prezzoBigliettoFinale = prezzoBigliettoIntero - scontoMinorenni
+    prezzoBigliettoFinale = prezzoBigliettoIntero - scontoMinorenni;
 } else if (etaPasseggero >= 65) {
-    prezzoBigliettoFinale = prezzoBigliettoIntero - scontoOver
-} else prezzoBigliettoFinale = prezzoBigliettoIntero
-console.log(prezzoBigliettoFinale);
+    prezzoBigliettoFinale = prezzoBigliettoIntero - scontoOver;
+} else prezzoBigliettoFinale = prezzoBigliettoIntero;
 
-
-
-
+console.log(prezzoBigliettoFinale);}
